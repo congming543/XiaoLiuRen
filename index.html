@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #808080; /* 灰色背景 */
+            background-color: #ffffff; /* 灰色背景 */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         table {
@@ -17,353 +20,380 @@
         }
 
         td {
-            border: 1px solid #000; /* 1像素的边框 */
-            padding: 10px;
+            border: 1px solid #2c2c2c; /* 1像素的边框 */
+            padding: 0px;
+            text-align: center;
         }
 
-        select {
+        td table {
             width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
         }
 
-        .container {
-            display: flex;
-            padding-left:50%;
-            
-        }
-
-        .box {
-            flex: 1;
-            border: 1px solid #000;
+        td table td {
+            border: 1px solid #333333;
             padding: 5px;
-            text-align: center;
         }
-        .t1{
-            text-align: center;
+        .title{
+            font-size: 30px;
             color: red;
-            font-size: 20px;
-            font
+            text-align: center;
         }
     </style>
-    <title>Your Page Title</title>
+    <title>小六壬在线排盘</title>
 </head>
 <body>
+    <div>
+        <p class="title">小六壬在线排盘程序</p>
+        <p>当前农历：XX 年  XX月   辰  时</p>
+    </div>
+    
 
     <table>
         <tr>
             <td>
-                <select>
-                    <option value="木星">木星</option>
-                    <option value="火星">火星</option>
-                    <option value="土星">土星</option>
-                    <option value="金星">金星</option>
-                    <option value="水星">水星</option>
-                    <option value="天空">天空</option>
-                </select>
-
-                <select>
-                    <option value="勾陈">勾陈</option>
-                    <option value="朱雀">朱雀</option>
-                    <option value="玄武">玄武</option>
-                    <option value="白虎">白虎</option>
-                    <option value="腾蛇">腾蛇</option>
-                    <option value="青龙">青龙</option>
-                </select>
-
-                <select>
-                    <option value="子孙">子孙</option>
-                    <option value="自身">自身</option>
-                    <option value="妻财">妻财</option>
-                    <option value="父母">父母</option>
-                    <option value="官鬼">官鬼</option>
-                    <option value="兄弟">兄弟</option>
-                </select>
-
-                <select>
-                    <option value="子">子</option>
-                    <option value="丑">丑</option>
-                    <option value="寅">寅</option>
-                    <option value="卯">卯</option>
-                    <option value="辰">辰</option>
-                    <option value="巳">巳</option>
-                    <option value="午">午</option>
-                    <option value="未">未</option>
-                    <option value="申">申</option>
-                    <option value="酉">酉</option>
-                    <option value="戌">戌</option>
-                    <option value="亥">亥</option>
-                    
-                </select>
-
-                <div class="container">
-                    <div>日</div>
-                    <div class="t1">留连</div>
-                    <div>时</div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="土星">土星</option>
+                                <option value="金星">金星</option>
+                                <option value="水星">水星</option>
+                                <option value="天空">天空</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="勾陈">勾陈</option>
+                                <option value="朱雀">朱雀</option>
+                                <option value="玄武">玄武</option>
+                                <option value="白虎">白虎</option>
+                                <option value="腾蛇">腾蛇</option>
+                                <option value="青龙">青龙</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                            <option value="子">子时</option>
+                            <option value="丑">丑时</option>
+                            <option value="寅">寅时</option>
+                            <option value="卯">卯时</option>
+                            <option value="辰">辰时</option>
+                            <option value="巳">巳时</option>
+                            <option value="午">午时</option>
+                            <option value="未">未时</option>
+                            <option value="申">申时</option>
+                            <option value="酉">酉时</option>
+                            <option value="戌">戌时</option>
+                            <option value="亥">亥时</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="子孙">子孙</option>
+                                <option value="自身">自身</option>
+                                <option value="妻财">妻财</option>
+                                <option value="父母">父母</option>
+                                <option value="官鬼">官鬼</option>
+                                <option value="兄弟">兄弟</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">留连</td>
+                    </tr>
+                </table>
             </td>
-
             <td>
-                <select>
-                    <option value="木星">木星</option>
-                    <option value="火星">火星</option>
-                    <option value="土星">土星</option>
-                    <option value="金星">金星</option>
-                    <option value="水星">水星</option>
-                    <option value="天空">天空</option>
-                </select>
-
-                <select>
-                    <option value="勾陈">勾陈</option>
-                    <option value="朱雀">朱雀</option>
-                    <option value="玄武">玄武</option>
-                    <option value="白虎">白虎</option>
-                    <option value="腾蛇">腾蛇</option>
-                    <option value="青龙">青龙</option>
-                </select>
-
-                <select>
-                    <option value="子孙">子孙</option>
-                    <option value="自身">自身</option>
-                    <option value="妻财">妻财</option>
-                    <option value="父母">父母</option>
-                    <option value="官鬼">官鬼</option>
-                    <option value="兄弟">兄弟</option>
-                </select>
-
-                <select>
-                    <option value="子">子</option>
-                    <option value="丑">丑</option>
-                    <option value="寅">寅</option>
-                    <option value="卯">卯</option>
-                    <option value="辰">辰</option>
-                    <option value="巳">巳</option>
-                    <option value="午">午</option>
-                    <option value="未">未</option>
-                    <option value="申">申</option>
-                    <option value="酉">酉</option>
-                    <option value="戌">戌</option>
-                    <option value="亥">亥</option>
-                    
-                </select>
-
-                <div class="container">
-                    <div>日</div>
-                    <div class="t1">速喜</div>
-                    <div>时</div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="土星">土星</option>
+                                <option value="金星">金星</option>
+                                <option value="水星">水星</option>
+                                <option value="天空">天空</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="勾陈">勾陈</option>
+                                <option value="朱雀">朱雀</option>
+                                <option value="玄武">玄武</option>
+                                <option value="白虎">白虎</option>
+                                <option value="腾蛇">腾蛇</option>
+                                <option value="青龙">青龙</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="子">子时</option>
+                                <option value="丑">丑时</option>
+                                <option value="寅">寅时</option>
+                                <option value="卯">卯时</option>
+                                <option value="辰">辰时</option>
+                                <option value="巳">巳时</option>
+                                <option value="午">午时</option>
+                                <option value="未">未时</option>
+                                <option value="申">申时</option>
+                                <option value="酉">酉时</option>
+                                <option value="戌">戌时</option>
+                                <option value="亥">亥时</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="子孙">子孙</option>
+                                <option value="自身">自身</option>
+                                <option value="妻财">妻财</option>
+                                <option value="父母">父母</option>
+                                <option value="官鬼">官鬼</option>
+                                <option value="兄弟">兄弟</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">速喜</td>
+                    </tr>
+                </table>
             </td>
-
             <td>
-                <select>
-                    <option value="木星">木星</option>
-                    <option value="火星">火星</option>
-                    <option value="土星">土星</option>
-                    <option value="金星">金星</option>
-                    <option value="水星">水星</option>
-                    <option value="天空">天空</option>
-                </select>
-
-                <select>
-                    <option value="勾陈">勾陈</option>
-                    <option value="朱雀">朱雀</option>
-                    <option value="玄武">玄武</option>
-                    <option value="白虎">白虎</option>
-                    <option value="腾蛇">腾蛇</option>
-                    <option value="青龙">青龙</option>
-                </select>
-
-                <select>
-                    <option value="子孙">子孙</option>
-                    <option value="自身">自身</option>
-                    <option value="妻财">妻财</option>
-                    <option value="父母">父母</option>
-                    <option value="官鬼">官鬼</option>
-                    <option value="兄弟">兄弟</option>
-                </select>
-
-                <select>
-                    <option value="子">子</option>
-                    <option value="丑">丑</option>
-                    <option value="寅">寅</option>
-                    <option value="卯">卯</option>
-                    <option value="辰">辰</option>
-                    <option value="巳">巳</option>
-                    <option value="午">午</option>
-                    <option value="未">未</option>
-                    <option value="申">申</option>
-                    <option value="酉">酉</option>
-                    <option value="戌">戌</option>
-                    <option value="亥">亥</option>
-                    
-                </select>
-
-                <div class="container">
-                    <div>日</div>
-                    <div class="t1">赤口</div>
-                    <div>时</div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="土星">土星</option>
+                                <option value="金星">金星</option>
+                                <option value="水星">水星</option>
+                                <option value="天空">天空</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="勾陈">勾陈</option>
+                                <option value="朱雀">朱雀</option>
+                                <option value="玄武">玄武</option>
+                                <option value="白虎">白虎</option>
+                                <option value="腾蛇">腾蛇</option>
+                                <option value="青龙">青龙</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="子">子时</option>
+                                <option value="丑">丑时</option>
+                                <option value="寅">寅时</option>
+                                <option value="卯">卯时</option>
+                                <option value="辰">辰时</option>
+                                <option value="巳">巳时</option>
+                                <option value="午">午时</option>
+                                <option value="未">未时</option>
+                                <option value="申">申时</option>
+                                <option value="酉">酉时</option>
+                                <option value="戌">戌时</option>
+                                <option value="亥">亥时</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="子孙">子孙</option>
+                                <option value="自身">自身</option>
+                                <option value="妻财">妻财</option>
+                                <option value="父母">父母</option>
+                                <option value="官鬼">官鬼</option>
+                                <option value="兄弟">兄弟</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">赤口</td>
+                    </tr>
+                </table>
             </td>
-
-
-
         </tr>
-
         <tr>
-
             <td>
-                <select>
-                    <option value="木星">木星</option>
-                    <option value="火星">火星</option>
-                    <option value="土星">土星</option>
-                    <option value="金星">金星</option>
-                    <option value="水星">水星</option>
-                    <option value="天空">天空</option>
-                </select>
-
-                <select>
-                    <option value="勾陈">勾陈</option>
-                    <option value="朱雀">朱雀</option>
-                    <option value="玄武">玄武</option>
-                    <option value="白虎">白虎</option>
-                    <option value="腾蛇">腾蛇</option>
-                    <option value="青龙">青龙</option>
-                </select>
-
-                <select>
-                    <option value="子孙">子孙</option>
-                    <option value="自身">自身</option>
-                    <option value="妻财">妻财</option>
-                    <option value="父母">父母</option>
-                    <option value="官鬼">官鬼</option>
-                    <option value="兄弟">兄弟</option>
-                </select>
-
-                <select>
-                    <option value="子">子</option>
-                    <option value="丑">丑</option>
-                    <option value="寅">寅</option>
-                    <option value="卯">卯</option>
-                    <option value="辰">辰</option>
-                    <option value="巳">巳</option>
-                    <option value="午">午</option>
-                    <option value="未">未</option>
-                    <option value="申">申</option>
-                    <option value="酉">酉</option>
-                    <option value="戌">戌</option>
-                    <option value="亥">亥</option>
-                    
-                </select>
-
-                <div class="container">
-                    <div>日</div>
-                    <div class="t1">大安</div>
-                    <div>时</div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="土星">土星</option>
+                                <option value="金星">金星</option>
+                                <option value="水星">水星</option>
+                                <option value="天空">天空</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="勾陈">勾陈</option>
+                                <option value="朱雀">朱雀</option>
+                                <option value="玄武">玄武</option>
+                                <option value="白虎">白虎</option>
+                                <option value="腾蛇">腾蛇</option>
+                                <option value="青龙">青龙</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="子">子时</option>
+                                <option value="丑">丑时</option>
+                                <option value="寅">寅时</option>
+                                <option value="卯">卯时</option>
+                                <option value="辰">辰时</option>
+                                <option value="巳">巳时</option>
+                                <option value="午">午时</option>
+                                <option value="未">未时</option>
+                                <option value="申">申时</option>
+                                <option value="酉">酉时</option>
+                                <option value="戌">戌时</option>
+                                <option value="亥">亥时</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="子孙">子孙</option>
+                                <option value="自身">自身</option>
+                                <option value="妻财">妻财</option>
+                                <option value="父母">父母</option>
+                                <option value="官鬼">官鬼</option>
+                                <option value="兄弟">兄弟</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">大安</td>
+                    </tr>
+                </table>
             </td>
-
             <td>
-                <select>
-                    <option value="木星">木星</option>
-                    <option value="火星">火星</option>
-                    <option value="土星">土星</option>
-                    <option value="金星">金星</option>
-                    <option value="水星">水星</option>
-                    <option value="天空">天空</option>
-                </select>
-
-                <select>
-                    <option value="勾陈">勾陈</option>
-                    <option value="朱雀">朱雀</option>
-                    <option value="玄武">玄武</option>
-                    <option value="白虎">白虎</option>
-                    <option value="腾蛇">腾蛇</option>
-                    <option value="青龙">青龙</option>
-                </select>
-
-                <select>
-                    <option value="子孙">子孙</option>
-                    <option value="自身">自身</option>
-                    <option value="妻财">妻财</option>
-                    <option value="父母">父母</option>
-                    <option value="官鬼">官鬼</option>
-                    <option value="兄弟">兄弟</option>
-                </select>
-
-                <select>
-                    <option value="子">子</option>
-                    <option value="丑">丑</option>
-                    <option value="寅">寅</option>
-                    <option value="卯">卯</option>
-                    <option value="辰">辰</option>
-                    <option value="巳">巳</option>
-                    <option value="午">午</option>
-                    <option value="未">未</option>
-                    <option value="申">申</option>
-                    <option value="酉">酉</option>
-                    <option value="戌">戌</option>
-                    <option value="亥">亥</option>
-                    
-                </select>
-
-                <div class="container">
-                    <div>日</div>
-                    <div class="t1">空亡</div>
-                    <div>时</div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="土星">土星</option>
+                                <option value="金星">金星</option>
+                                <option value="水星">水星</option>
+                                <option value="天空">天空</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="勾陈">勾陈</option>
+                                <option value="朱雀">朱雀</option>
+                                <option value="玄武">玄武</option>
+                                <option value="白虎">白虎</option>
+                                <option value="腾蛇">腾蛇</option>
+                                <option value="青龙">青龙</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="子">子时</option>
+                                <option value="丑">丑时</option>
+                                <option value="寅">寅时</option>
+                                <option value="卯">卯时</option>
+                                <option value="辰">辰时</option>
+                                <option value="巳">巳时</option>
+                                <option value="午">午时</option>
+                                <option value="未">未时</option>
+                                <option value="申">申时</option>
+                                <option value="酉">酉时</option>
+                                <option value="戌">戌时</option>
+                                <option value="亥">亥时</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="子孙">子孙</option>
+                                <option value="自身">自身</option>
+                                <option value="妻财">妻财</option>
+                                <option value="父母">父母</option>
+                                <option value="官鬼">官鬼</option>
+                                <option value="兄弟">兄弟</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">空亡</td>
+                    </tr>
+                </table>
             </td>
-
             <td>
-                <select>
-                    <option value="木星">木星</option>
-                    <option value="火星">火星</option>
-                    <option value="土星">土星</option>
-                    <option value="金星">金星</option>
-                    <option value="水星">水星</option>
-                    <option value="天空">天空</option>
-                </select>
-
-                <select>
-                    <option value="勾陈">勾陈</option>
-                    <option value="朱雀">朱雀</option>
-                    <option value="玄武">玄武</option>
-                    <option value="白虎">白虎</option>
-                    <option value="腾蛇">腾蛇</option>
-                    <option value="青龙">青龙</option>
-                </select>
-
-                <select>
-                    <option value="子孙">子孙</option>
-                    <option value="自身">自身</option>
-                    <option value="妻财">妻财</option>
-                    <option value="父母">父母</option>
-                    <option value="官鬼">官鬼</option>
-                    <option value="兄弟">兄弟</option>
-                </select>
-
-                <select>
-                    <option value="子">子</option>
-                    <option value="丑">丑</option>
-                    <option value="寅">寅</option>
-                    <option value="卯">卯</option>
-                    <option value="辰">辰</option>
-                    <option value="巳">巳</option>
-                    <option value="午">午</option>
-                    <option value="未">未</option>
-                    <option value="申">申</option>
-                    <option value="酉">酉</option>
-                    <option value="戌">戌</option>
-                    <option value="亥">亥</option>
-                    
-                </select>
-
-                <div class="container">
-                    <div>日</div>
-                    <div class="t1">小吉</div>
-                    <div>时</div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="土星">土星</option>
+                                <option value="金星">金星</option>
+                                <option value="水星">水星</option>
+                                <option value="天空">天空</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="勾陈">勾陈</option>
+                                <option value="朱雀">朱雀</option>
+                                <option value="玄武">玄武</option>
+                                <option value="白虎">白虎</option>
+                                <option value="腾蛇">腾蛇</option>
+                                <option value="青龙">青龙</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="子">子时</option>
+                                <option value="丑">丑时</option>
+                                <option value="寅">寅时</option>
+                                <option value="卯">卯时</option>
+                                <option value="辰">辰时</option>
+                                <option value="巳">巳时</option>
+                                <option value="午">午时</option>
+                                <option value="未">未时</option>
+                                <option value="申">申时</option>
+                                <option value="酉">酉时</option>
+                                <option value="戌">戌时</option>
+                                <option value="亥">亥时</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="子孙">子孙</option>
+                                <option value="自身">自身</option>
+                                <option value="妻财">妻财</option>
+                                <option value="父母">父母</option>
+                                <option value="官鬼">官鬼</option>
+                                <option value="兄弟">兄弟</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">小吉</td>
+                    </tr>
+                </table>
             </td>
-
         </tr>
     </table>
 
